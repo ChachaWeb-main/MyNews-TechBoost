@@ -21,7 +21,7 @@
                     <div class="form-group row">
                         <label class="col-md-2">氏名 (Name)</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="name" value="{{ old('title') }}">
+                            <input type="text" class="form-control" name="name" value="{{ old('name') }}">
                         </div>
                     </div>
                     
@@ -37,12 +37,12 @@
                             
                             <!--パターンB-->
                             <div>
-                              <input type="radio" id="男性 (Male)" name="drone" value="男性 (Male)" checked>
+                              <input type="radio" id="男性 (Male)" name="gender" value="男性 (Male)" checked>
                               <label for="男性 (Male)">男性 (Male)</label>
                             </div>
                             
                             <div>
-                              <input type="radio" id="女性 (Female)" name="drone" value="女性 (Female)">
+                              <input type="radio" id="女性 (Female)" name="gender" value="女性 (Female)">
                               <label for="女性 (Female)">女性 (Female)</label>
                             </div>
                         </div>
@@ -51,14 +51,14 @@
                     <div class="form-group row">
                         <label class="col-md-2">趣味 (Hobby)</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="body" rows="5">{{ old('body') }}</textarea>
+                            <textarea class="form-control" name="hobby" rows="5">{{ old('hobby') }}</textarea>
                         </div>
                     </div>
                     
                     <div class="form-group row">
                         <label class="col-md-2">自己紹介 (Introduction)</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="body" rows="15">{{ old('body') }}</textarea>
+                            <textarea class="form-control" name="introduction" rows="15">{{ old('introduction') }}</textarea>
                     </div>
                     
                     {{ csrf_field() }}

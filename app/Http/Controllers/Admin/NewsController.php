@@ -17,7 +17,8 @@ class NewsController extends Controller
     
     // 以下を追記(P/L 13)
     public function create(Request $request){
-        // 以下を追記、Varidationを行う(P/L 14)
+        // 以下を追記、
+        // Varidationを行う(P/L 14)
         $this->validate($request, News::$rules);
         
         $news = new News;
@@ -25,9 +26,11 @@ class NewsController extends Controller
         
         // フォームから画像が送信されてきたら、保存して、$news->image_pathに画像のパスを保存する
         if (isset($form['image'])) {
-            $path = $request->file('image')->store('public/image');
-            $news->image_path = null;
-        }
+        $path = $request->file('image')->store('public/image');
+        $news->image_path = basename($path);
+      } else {
+          $news->image_path = null;
+      }
         
         // フォームから送信されてきた_tokenを削除する
         unset($form['_token']);
