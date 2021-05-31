@@ -51,7 +51,7 @@
                     <div class="form-group row">
                         <label class="col-md-2">趣味 (Hobby)</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="hobby" rows="5">{{ old('hobby') }}</textarea>
+                            <textarea class="form-control" name="hobby" rows="2">{{ old('hobby') }}</textarea>
                         </div>
                     </div>
                     
@@ -62,7 +62,7 @@
                     </div>
                     
                     {{ csrf_field() }}
-                    <input type="submit" class="btn btn-primary" value="更新">
+                    <input type="submit" class="btn btn-primary" value="登録">
                 </form> 
             </div>
         </div>
