@@ -8,7 +8,7 @@
 
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>@yield('title')</title>
+        <title>プロフィール一覧</title>
 
         <script src="{{ secure_asset('js/app.js') }}" defer></script>
 
@@ -17,8 +17,9 @@
 
         <!-- Styles -->
         <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ secure_asset('css/profile.css') }}" rel="stylesheet">
-
+        <!--<link href="{{ secure_asset('css/profile.css') }}" rel="stylesheet">-->
+        <link href="{{ secure_asset('css/front2.css') }}" rel="stylesheet">
+    
     </head>
     <body>
         <div id="app">

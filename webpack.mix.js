@@ -15,4 +15,6 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .sass('resources/sass/admin.scss', 'public/css') //追記(P/L19)
     .sass('resources/sass/profile.scss', 'public/css')
-    .sass('resources/sass/front.scss', 'public/css'); //追記(P/L19)
+    .sass('resources/sass/front.scss', 'public/css') //追記(P/L19)
+    .sass('resources/sass/front2.scss', 'public/css'); //
+    
