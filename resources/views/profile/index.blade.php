@@ -13,10 +13,10 @@
                         <thead>
                             <tr>
                                 <th width="5%">ID</th>
-                                <th width="10%">氏名</th>
-                            　　<th width="5%">性別</th>
-                            　　<th width="20%">趣味</th>
-                                <th width="50%">自己紹介</th>
+                                <th width="10%">氏名 (name)</th>
+                            　　<th width="10%">性別 (gender)</th>
+                            　　<th width="15%">趣味 (hobby)</th>
+                                <th width="55%">自己紹介 (introduction)</th>
                             </tr>
                         </thead>
                         <tbody>
